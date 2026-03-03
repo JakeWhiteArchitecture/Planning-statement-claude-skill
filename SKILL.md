@@ -13,112 +13,138 @@ description: Develop planning statements for UK planning applications through an
 START
   |
   v
-+-----------------------------+
-|  STAGE 0: PROJECT SETUP     |
-|  District, site, app type   |
-|  Benefit Threads identified |
-|  -> Policy research trigger |
-+-----------------------------+
++-------------------------------+
+|  STAGE 0: PROJECT SETUP       |
+|  District, site, app type     |
+|  Benefit Threads identified   |
+|  -> Policy research trigger   |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 1: INTRODUCTION      |
-|  Applicant, description     |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 1: INTRODUCTION        |
+|  Applicant, description       |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 2: SITE & CONTEXT    |
-|  Physical, designations     |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 2: SITE & CONTEXT      |
+|  Physical, designations       |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 3: PLANNING HISTORY  |
-|  Previous apps, pre-app     |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 3: PLANNING HISTORY    |
+|  Previous apps, pre-app       |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 4: THE PROPOSAL      |
-|  Detailed description       |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 4: THE PROPOSAL        |
+|  Detailed description         |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 5: POLICY FRAMEWORK  |
-|  NPPF + Local Plan + NP     |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 5: STATUTORY FRAMEWORK |
+|  s38(6), s70(2), NPPF p11    |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 6: DESIGN & VISUAL   |
-|  Character, appearance      |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 6: PRINCIPLE OF DEV    |
+|  Settlement, allocation,      |
+|  5YHLS, fallback              |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 7: AMENITY           |
-|  Privacy, light, noise      |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 7: NEED &              |
+|  JUSTIFICATION                |
+|  Benefit Threads -> policy    |
+|  Housing/economic/community   |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 8: ACCESS & HIGHWAYS |
-|  Transport, parking         |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 8: POLICY FRAMEWORK    |
+|  NPPF + Local Plan + NP       |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 9: ENVIRONMENT       |
-|  Flood, ecology, trees,     |
-|  drainage, sustainability   |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 9: DESIGN & VISUAL     |
+|  Character, appearance        |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 10: HERITAGE         |
-|  Listed, CA, archaeology    |
-|  (skip if not applicable)   |
-|  -> Policy research trigger |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 10: AMENITY            |
+|  Privacy, light, noise        |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  STAGE 11: CONSULTATION     |
-|  Pre-app, engagement, DRP   |
-|  -> Confirm before moving on|
-+-----------------------------+
++-------------------------------+
+|  STAGE 11: ACCESS & HIGHWAYS  |
+|  Transport, parking           |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  FINAL CHECK                |
-|  Any unique topics to add?  |
-|  -> Confirm ready to draft  |
-+-----------------------------+
++-------------------------------+
+|  STAGE 12: ENVIRONMENT        |
+|  Flood, ecology, trees,       |
+|  drainage, sustainability     |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
   |
   v
-+-----------------------------+
-|  DOCUMENT GENERATION        |
-|  Compile .docx              |
-|  Present to user            |
-+-----------------------------+
++-------------------------------+
+|  STAGE 13: HERITAGE           |
+|  Listed, CA, archaeology      |
+|  (skip if not applicable)     |
+|  -> Policy research trigger   |
+|  -> Confirm before moving on  |
++-------------------------------+
+  |
+  v
++-------------------------------+
+|  STAGE 14: CONSULTATION       |
+|  Pre-app, engagement, DRP     |
+|  -> Confirm before moving on  |
++-------------------------------+
+  |
+  v
++-------------------------------+
+|  FINAL CHECK                  |
+|  Any unique topics to add?    |
+|  -> Confirm ready to draft    |
++-------------------------------+
+  |
+  v
++-------------------------------+
+|  DOCUMENT GENERATION          |
+|  Compile .docx                |
+|  Present to user              |
++-------------------------------+
 ```
 
 ---
@@ -260,11 +286,79 @@ A short introductory paragraph identifying the site, the applicant, the nature o
 - Relationship to existing building -- where does it connect, how does it read architecturally
 - Area, Height and Volume calculations (existing vs proposed, % increase)
 
-**Confirm:** "Have we fully described the proposal? Anything to add before we move on to Policy Framework?"
+**Confirm:** "Have we fully described the proposal? Anything to add before we move on to Statutory Framework?"
 
 ---
 
-## STAGE 5: PLANNING POLICY FRAMEWORK
+## STAGE 5: STATUTORY FRAMEWORK
+
+**Purpose:** Establish the legal basis for how planning decisions are made. This sets the rules of the game before the detailed policy assessment begins.
+
+**Proportionality:** For householder applications, this can be a single short paragraph. For full or outline applications, it warrants a dedicated section.
+
+**Information to cover (not gathered from user -- this is standard legal context):**
+
+- **Section 38(6) of the Planning and Compulsory Purchase Act 2004** -- applications must be determined in accordance with the development plan unless material considerations indicate otherwise.
+- **Section 70(2) of the Town and Country Planning Act 1990** -- the LPA shall have regard to the provisions of the development plan, so far as material, and to any other material considerations.
+- **NPPF presumption in favour of sustainable development** (paragraph 11) -- the "tilted balance" and when it is engaged (e.g. absence of five-year housing land supply, out-of-date policies).
+- **Identify the statutory development plan** for the area -- list the documents that constitute it (e.g. "The statutory development plan for this site comprises the [District] Local Plan [year], the [Neighbourhood Plan if applicable], and the [Minerals/Waste Plan if relevant]").
+
+**Writing guidance:** This section should read as confident, factual legal context -- not defensive or over-explained. It frames the decision-making test so the reader understands what the statement is being assessed against.
+
+**Confirm:** "Have we established the statutory framework? Anything to add before we move on to Principle of Development?"
+
+---
+
+## STAGE 6: PRINCIPLE OF DEVELOPMENT
+
+**Purpose:** Establish whether the proposed development is acceptable in principle before diving into the detailed topic-by-topic assessment. This is the threshold question a case officer must answer first.
+
+**Proportionality:** For householder applications within established residential areas, this may be a brief paragraph confirming the principle is not in dispute. For full or outline applications, especially on edge-of-settlement, Green Belt, or unallocated sites, this is a critical section that can make or break the case.
+
+**Information to gather / discuss:**
+
+- Is the site within the defined settlement boundary / development limit?
+- Is the site allocated for development in the Local Plan?
+- Is it previously developed land (PDL/brownfield)?
+- What is the current use and the proposed use -- is the change of use acceptable in principle under the spatial strategy?
+- If outside a settlement boundary: what policy support exists for development in this location? (e.g. NPPF paragraph 83 for rural economy, infill, rural exception sites)
+- If Green Belt: which NPPF exceptions apply? (paragraphs 154-156 for new buildings, 157 for extensions/alterations, 158-159 for replacement buildings, etc.)
+- **Five-year housing land supply** -- can the LPA demonstrate a five-year supply? If not, the tilted balance under NPPF paragraph 11(d) is engaged. Search for the LPA's latest housing land supply position.
+- **Housing Delivery Test** -- has the LPA met the HDT threshold? If delivery is below 75%, the tilted balance is engaged.
+- Any relevant precedent from planning history (Stage 3) that supports the principle.
+- Any fallback position (e.g. permitted development rights that could deliver a comparable or worse outcome without planning permission).
+
+**Policy research trigger:** "Shall I search for [district]'s latest five-year housing land supply position and any spatial strategy policies relevant to the principle of development at this location?"
+
+**Confirm:** "Have we established the principle of development? Anything to add before we move on to Need & Justification?"
+
+---
+
+## STAGE 7: NEED & JUSTIFICATION FOR DEVELOPMENT
+
+**Purpose:** Articulate *why* this development is needed -- not just that it complies with policy, but that it serves a genuine purpose and delivers tangible benefits. This section draws directly on the Benefit Threads identified in Stage 0 and translates them into planning arguments.
+
+**Proportionality:** For householder applications, this may be a brief paragraph on personal/family need and improved living conditions. For full or outline applications, this should be a substantive section covering housing need, economic benefits, and community value.
+
+**Information to gather / discuss:**
+
+- **Housing need** (if residential) -- local housing need figures, affordability, tenure mix, housing type/size needed in the area
+- **Personal/family need** (for householder apps) -- growing family, accessibility requirements, working from home, caring for elderly relatives
+- **Economic benefits** -- construction jobs, local spending, New Homes Bonus, Council Tax revenue, business rates (if commercial)
+- **Community benefits** -- public open space, affordable housing contribution, infrastructure improvements, community facilities
+- **Addressing existing problems** -- resolving a poor layout, replacing a substandard building, improving energy performance of existing housing stock, removing an eyesore
+- **Sustainability benefits** -- reducing carbon emissions, improving building performance, supporting sustainable transport patterns, BNG delivery
+- **Any site-specific justification** -- e.g. enabling development to fund heritage restoration, agricultural diversification, rural enterprise
+
+**Link to Benefit Threads:** Review the Benefit Threads from Stage 0 and ensure each one has been translated into a planning argument with policy support. If any threads haven't yet been connected to specific policies, flag them for the Policy Framework stage.
+
+**Policy research trigger:** "Shall I search for [district]'s policies on [housing need / economic development / sustainability] to support the justification for this scheme?"
+
+**Confirm:** "Have we fully articulated the need and justification? Anything to add before we move on to the Policy Framework?"
+
+---
+
+## STAGE 8: PLANNING POLICY FRAMEWORK
 
 **Purpose:** Identify and analyse every relevant planning policy. This is the core of the statement.
 
@@ -321,7 +415,7 @@ For each identified Local Plan policy:
 
 ---
 
-## STAGE 6: DESIGN & VISUAL IMPACT
+## STAGE 9: DESIGN & VISUAL IMPACT
 
 **Purpose:** Demonstrate that the proposal is well-designed and respects local character.
 
@@ -343,7 +437,7 @@ For each identified Local Plan policy:
 
 ---
 
-## STAGE 7: RESIDENTIAL AMENITY
+## STAGE 10: RESIDENTIAL AMENITY
 
 **Purpose:** Demonstrate the proposal does not unacceptably harm neighbours' living conditions.
 
@@ -362,7 +456,7 @@ For each identified Local Plan policy:
 
 ---
 
-## STAGE 8: ACCESS, HIGHWAYS & PARKING
+## STAGE 11: ACCESS, HIGHWAYS & PARKING
 
 **Purpose:** Demonstrate safe and adequate access, parking, and transport arrangements.
 
@@ -385,7 +479,7 @@ For each identified Local Plan policy:
 
 ---
 
-## STAGE 9: ENVIRONMENTAL CONSIDERATIONS
+## STAGE 12: ENVIRONMENTAL CONSIDERATIONS
 
 **Purpose:** Address all environmental matters relevant to the site and proposal.
 
@@ -432,7 +526,7 @@ For each identified Local Plan policy:
 
 ---
 
-## STAGE 10: HERITAGE (if applicable)
+## STAGE 13: HERITAGE (if applicable)
 
 **Skip this stage if no heritage designations were identified in Stage 2.**
 
@@ -455,7 +549,7 @@ For each identified Local Plan policy:
 
 ---
 
-## STAGE 11: CONSULTATION & ENGAGEMENT
+## STAGE 14: CONSULTATION & ENGAGEMENT
 
 **Purpose:** Demonstrate that the applicant has engaged constructively with stakeholders.
 
@@ -503,17 +597,20 @@ If additional topics are identified, discuss each one iteratively with the same 
 2.0  Site Description and Context
 3.0  Planning History
 4.0  The Proposal
-5.0  Planning Policy Framework
-     5.1  National Planning Policy Framework
-     5.2  [District] Local Plan
-     5.3  Neighbourhood Plan / SPDs (if applicable)
-6.0  Design and Visual Impact
-7.0  Residential Amenity
-8.0  Access, Highways and Parking
-9.0  Environmental Considerations
-10.0 Heritage Considerations (if applicable)
-11.0 Consultation and Engagement
-12.0 Conclusion
+5.0  Statutory Framework
+6.0  Principle of Development
+7.0  Need and Justification for Development
+8.0  Planning Policy Framework
+     8.1  National Planning Policy Framework
+     8.2  [District] Local Plan
+     8.3  Neighbourhood Plan / SPDs (if applicable)
+9.0  Design and Visual Impact
+10.0 Residential Amenity
+11.0 Access, Highways and Parking
+12.0 Environmental Considerations
+13.0 Heritage Considerations (if applicable)
+14.0 Consultation and Engagement
+15.0 Conclusion
 ```
 
 4. The Conclusion should:
@@ -551,11 +648,13 @@ At the following stages, offer to search online for relevant policies:
 |-------|---------------|
 | 0 | Adopted Local Plan -- identify document name and key policies |
 | 2 | Designation-specific policies (Green Belt, AONB, CA, Flood Zone) |
-| 5 | Full Local Plan policy audit -- design, amenity, transport, environment, heritage |
-| 6 | Design policies, design SPD/guidance, character assessments |
-| 7 | Amenity policies, separation distance guidance |
-| 8 | Parking standards (LPA or county), transport policies |
-| 9 | Environmental policies -- flood, ecology, trees, sustainability |
-| 10 | Heritage policies, conservation area appraisals |
+| 6 | Five-year housing land supply, spatial strategy, principle of development |
+| 7 | Housing need, economic development, sustainability policies to support justification |
+| 8 | Full Local Plan policy audit -- design, amenity, transport, environment, heritage |
+| 9 | Design policies, design SPD/guidance, character assessments |
+| 10 | Amenity policies, separation distance guidance |
+| 11 | Parking standards (LPA or county), transport policies |
+| 12 | Environmental policies -- flood, ecology, trees, sustainability |
+| 13 | Heritage policies, conservation area appraisals |
 
 Always ask before searching. The user may already have the policy information or may prefer to provide it themselves.
