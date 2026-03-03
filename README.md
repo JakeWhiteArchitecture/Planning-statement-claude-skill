@@ -89,11 +89,6 @@ The skill activates on any of the following (or similar intent):
 - "planning statement"
 - "write a planning statement"
 - "help with planning statement"
-- "policy justification"
-- "planning application support"
-- "I need to justify this scheme to the planners"
-- "help me with the policy argument"
-- Design and Access Statement discussed in the context of planning policy
 
 ## Writing Style
 
