@@ -323,7 +323,7 @@ For each relevant comment found, note:
 - Parish Council's position (support/object/no comment)
 - Key concerns raised
 
-**Important:** Parish Council comments are intelligence, not a checklist to respond to. Many parish councils are generally anti-development and their objections often go beyond material planning considerations. The statement should be **aware** of likely concerns so it can pre-emptively address any that overlap with genuine policy tests, but should NOT directly respond to or rebut parish council positions. The planning statement argues policy compliance, not community politics.
+**Important:** Parish Council comments are intelligence, not a checklist to respond to. Many parish councils are generally anti-development and their objections often go beyond material planning considerations. The statement should be **aware** of likely concerns so it can pre-emptively address any that overlap with genuine policy tests, but should NOT directly respond to or rebut parish council positions. The focus is the adopted local and neighbourhood plans, regional and national policy.
 
 **Append to outline.md:** Application history, refusal reasons (flagged for policy response), pre-app advice summary, Parish Council comment patterns (for awareness, not direct response).
 
