@@ -13,138 +13,97 @@ description: Develop planning statements for UK planning applications through an
 START
   |
   v
-+-------------------------------+
-|  STAGE 0: PROJECT SETUP       |
-|  District, site, app type     |
-|  Benefit Threads identified   |
-|  -> Policy research trigger   |
-+-------------------------------+
++-----------------------------+      +---------------------------+
+|  STAGE 0: PROJECT SETUP     |      |  OUTLINE FILE             |
+|  District, app type         |      |  /home/claude/outline.md  |
+|  -> Local Plan research     |----->|  Accumulates confirmed    |
++-----------------------------+      |  bullet points at each    |
+  |                                  |  stage. Persists state    |
+  v                                  |  across /compact.         |
++-----------------------------+      |                           |
+|  STAGE 1: INTRODUCTION      |----->|  Each stage appends:      |
+|  Agent, address, purpose    |      |  - Facts                  |
++-----------------------------+      |  - Policies identified    |
+  |                                  |  - Compliance narrative   |
+  v                                  |  - Outstanding issues     |
++-----------------------------+      |                           |
+|  STAGE 2: SITE & CONTEXT    |----->|                           |
+|  Physical, designations     |      |                           |
++-----------------------------+      |                           |
+  |                                  |                           |
+  v                                  |                           |
++-----------------------------+      |                           |
+|  STAGE 3: PLANNING HISTORY  |----->|                           |
++-----------------------------+      |                           |
+  |                                  |                           |
+  v                                  |                           |
++-----------------------------+      |                           |
+|  STAGE 4: THE PROPOSAL      |----->|                           |
++-----------------------------+      |                           |
+  |                                  |                           |
+  v                                  |                           |
++-----------------------------+      |                           |
+|  STAGE 5: DESIGN & VISUAL   |----->|                           |
++-----------------------------+      |                           |
+  |                                  |                           |
+  v                                  |                           |
++-----------------------------+      |                           |
+|  STAGE 6: AMENITY           |----->|                           |
++-----------------------------+      +---------------------------+
   |
   v
-+-------------------------------+
-|  STAGE 1: INTRODUCTION        |
-|  Applicant, description       |
-|  -> Confirm before moving on  |
-+-------------------------------+
++--------------------------------------+
+|  >>> /compact TRIGGER <<<            |
+|  Fires when outline.md exceeds 50   |
+|  bullet points. Always at a stage   |
+|  boundary. Re-read outline.md       |
+|  after compact to resume.           |
++--------------------------------------+
   |
   v
-+-------------------------------+
-|  STAGE 2: SITE & CONTEXT      |
-|  Physical, designations       |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
++-----------------------------+      +---------------------------+
+|  STAGE 7: ACCESS & HIGHWAYS |----->|  OUTLINE FILE continues   |
++-----------------------------+      |                           |
+  |                                  |                           |
+  v                                  |                           |
++-----------------------------+      |                           |
+|  STAGE 8: ENVIRONMENT       |----->|                           |
++-----------------------------+      |                           |
+  |                                  |                           |
+  v                                  |                           |
++-----------------------------+      |                           |
+|  STAGE 9: HERITAGE          |----->|                           |
+|  (skip if not applicable)   |      |                           |
++-----------------------------+      +---------------------------+
   |
   v
-+-------------------------------+
-|  STAGE 3: PLANNING HISTORY    |
-|  Previous apps, pre-app       |
-|  -> Confirm before moving on  |
-+-------------------------------+
++--------------------------------------+
+|  STAGE 10: POLICY FRAMEWORK REVIEW   |
+|  Bird's-eye review of outline.md     |
+|  against ALL policies. Gap-check.    |
+|  Strategic policies (NPPF Ch.2/4).   |
+|  Cross-references between sections.  |
++--------------------------------------+
   |
   v
-+-------------------------------+
-|  STAGE 4: THE PROPOSAL        |
-|  Detailed description         |
-|  -> Confirm before moving on  |
-+-------------------------------+
++-----------------------------+
+|  STAGE 11: CONSULTATION     |
+|  Pre-app, DRP, engagement   |
++-----------------------------+
   |
   v
-+-------------------------------+
-|  STAGE 5: STATUTORY FRAMEWORK |
-|  s38(6), s70(2), NPPF p11    |
-|  -> Confirm before moving on  |
-+-------------------------------+
++-----------------------------+
+|  FINAL CHECK                |
+|  Unique aspects? Fallback?  |
++-----------------------------+
   |
   v
-+-------------------------------+
-|  STAGE 6: PRINCIPLE OF DEV    |
-|  Settlement, allocation,      |
-|  5YHLS, fallback              |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 7: NEED &              |
-|  JUSTIFICATION                |
-|  Benefit Threads -> policy    |
-|  Housing/economic/community   |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 8: POLICY FRAMEWORK    |
-|  NPPF + Local Plan + NP       |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 9: DESIGN & VISUAL     |
-|  Character, appearance        |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 10: AMENITY            |
-|  Privacy, light, noise        |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 11: ACCESS & HIGHWAYS  |
-|  Transport, parking           |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 12: ENVIRONMENT        |
-|  Flood, ecology, trees,       |
-|  drainage, sustainability     |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 13: HERITAGE           |
-|  Listed, CA, archaeology      |
-|  (skip if not applicable)     |
-|  -> Policy research trigger   |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  STAGE 14: CONSULTATION       |
-|  Pre-app, engagement, DRP     |
-|  -> Confirm before moving on  |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  FINAL CHECK                  |
-|  Any unique topics to add?    |
-|  -> Confirm ready to draft    |
-+-------------------------------+
-  |
-  v
-+-------------------------------+
-|  DOCUMENT GENERATION          |
-|  Compile .docx                |
-|  Present to user              |
-+-------------------------------+
++-----------------------------+
+|  DOCUMENT GENERATION        |
+|  Read outline.md            |
+|  Read docx SKILL.md         |
+|  Compile .docx              |
++-----------------------------+
 ```
 
 ---
@@ -152,12 +111,103 @@ START
 ## CRITICAL RULES
 
 - **One stage at a time.** Never skip ahead or combine stages.
-- **Confirm before moving on.** At the end of every stage, ask: "Have we fully explored this topic, or is there anything else to add before we move on?"
-- **Policy research is embedded.** At relevant stages, ask: "Shall I search online for [district] Local Plan policies relevant to [this topic] before we move on?"
+- **Iterative loop at every stage.** Each stage follows the loop defined below -- not a single pass.
+- **Outline file is the memory.** Every confirmed stage appends to `/home/claude/outline.md`. This file persists across `/compact` and is the source of truth for document generation.
 - **District Council must be established first.** Stage 0 must identify which LPA the application is being submitted to -- this determines all subsequent policy research.
-- **Never include workmanship liability** in any text. Workmanship is the contractor's responsibility.
 - **Active, professional voice.** Write as though from the applicant's architect/agent. Positive framing -- "the proposal will..." not "the proposal should..."
 - **Policy citations must be specific.** Always cite policy numbers and quote or closely paraphrase the relevant policy test. Generic references like "the proposal complies with local plan policy" are not acceptable.
+- **Compact trigger at 50 bullet points.** After each stage is confirmed and appended to the outline, count the total bullet points in `/home/claude/outline.md`. If the count exceeds 50, trigger `/compact` at the next stage boundary. The outline file holds all state -- nothing is lost.
+
+---
+
+## THE ITERATIVE LOOP
+
+**Every stage from Stage 2 onwards follows this loop:**
+
+```
++---> USER PROVIDES FACTS
+|         |
+|         v
+|    CLAUDE RESEARCHES relevant policies for THIS topic
+|    (web_search for [district] policies on [topic])
+|         |
+|         v
+|    CLAUDE FEEDS BACK:
+|    - Which policies apply and what they require
+|    - How the user's facts align with those policy tests
+|    - Any gaps or concerns
+|         |
+|         v
+|    USER CORRECTS OR ADDS DETAIL
+|         |
+|         v
+|    CLAUDE RE-CHECKS corrected/additional detail against:
+|    - The original policy identified
+|    - ANY ASSOCIATED POLICIES the correction triggers
+|    (e.g. increased depth triggers amenity policy;
+|     mature tree triggers ecology + TPO policy;
+|     roof height change triggers landscape policy)
+|         |
+|         v
+|    Loop back if new issues found
+|    Otherwise:
+|         |
+|         v
+|    CLAUDE CONFIRMS the policy compliance narrative
+|    for this section and APPENDS to outline.md
+|         |
+|         v
+|    "Have we fully explored this topic, or is there
+|     anything else to add before we move on?"
+```
+
+**Key principle:** Corrections cascade. A changed dimension is not just a number update -- it may cross a policy threshold, trigger an adjacent policy, or affect a test in a different topic area. Always check associated policies when facts change.
+
+---
+
+## THE OUTLINE FILE
+
+At the start of Stage 0, create `/home/claude/outline.md` with this structure:
+
+```markdown
+# Planning Statement Outline
+## Project: [brief description]
+## LPA: [district]
+## Application Type: [type]
+## Local Plan: [document name and plan period]
+---
+
+### Stage 0: Project Setup
+**Facts:**
+- [bullet points]
+**Designations:**
+- [bullet points]
+**Local Plan identified:**
+- [document name, key policy numbers noted]
+
+### Stage 1: Introduction
+**Facts:**
+- [bullet points]
+
+### Stage 2: Site Description & Context
+**Facts:**
+- [bullet points]
+**Policies identified:**
+- [policy number]: [name] -- [how it applies]
+**Compliance narrative:**
+- [bullet point summary of the argument for this section]
+**Outstanding issues:**
+- [anything flagged for later stages]
+
+[...repeat structure for each subsequent stage...]
+```
+
+**Rules for the outline file:**
+- Append after each stage is confirmed -- never overwrite previous stages
+- Bullet points must be substantive, not shorthand. Include dimensions, distances, policy numbers, the agreed compliance argument. This file must survive a `/compact` and still make sense.
+- If a later stage triggers a backward reference (e.g. heritage research reveals something that affects site context), add a note under the relevant earlier stage heading: `**[Added at Stage 9]:** Conservation area appraisal identifies roofscape significance -- add to materials discussion.`
+- The outline file is for Claude's use, not a deliverable. It does not need to be pretty. It needs to be comprehensive.
+
 
 ---
 
@@ -165,26 +215,27 @@ START
 
 **Purpose:** Establish the basic parameters that determine the entire document structure and policy framework.
 
+**Action:** Create `/home/claude/outline.md` with the header structure.
+
 **Ask these questions:**
 
 1. **Which District/Borough Council** is this application being submitted to?
-2. **Never ask for applicant or site address.**
-3. **What type of planning application** is this? (Householder / Full / Outline / S73 / Listed Building Consent / Prior Approval / LDC)
-4. **Brief description of the proposal** -- one or two sentences is fine at this point.
-5. **What are the positive attributes and benefits of this proposal?** Ask: "What do you see as the key benefits of this scheme -- for the occupants, the site, the street scene, the wider community, or sustainability? Think broadly: improved living conditions, better use of land, energy performance, biodiversity gains, economic benefits, resolving existing problems, design quality, heritage enhancement -- anything that makes this a good scheme." Record all responses as **Benefit Threads** to be woven through the statement and used to steer policy research at later stages.
-
-**Why this matters:** Planning statements that only demonstrate policy compliance read defensively. Front-loading the scheme's positive attributes ensures that every subsequent policy research stage actively seeks out policies that *support* the proposal's benefits -- not just policies the proposal must defend against. The final document should read as a positive case for approval, not a compliance checklist.
+2. **Which Parish/Town Council** is the site within? (Note: some urban areas are unparished)
+3. **Never ask for applicant or site address.**
+4. **What type of planning application** is this? (Householder / Full / Outline / S73 / Listed Building Consent / Prior Approval / LDC)
+5. **Brief description of the proposal** -- one or two sentences is fine at this point.
 
 **After receiving answers:**
 
 - Confirm the LPA and note any known policy context -- identify the adopted Local Plan document name and plan period.
-- Review the Benefit Threads and note which policy areas they are likely to engage (e.g. a sustainability benefit will need sustainability policies; a streetscape improvement will need design/character policies). Flag these for targeted research at later stages.
 - Ask: "Do you know what site designations apply? For example: Green Belt, AONB, Conservation Area, Article 5, Listed buildings, Flood Zone, SSSI, Tree Preservation Orders?" -- note the answers for later stages.
-- Ask: "Shall I search online for the current adopted Local Plan policies for [district] so I can reference them accurately throughout? I'll also look for policies that specifically support the benefits you've identified."
+- Ask: "Shall I search online for the current adopted Local Plan policies for [district] so I can reference them accurately throughout?"
 
-**Policy research trigger:** If user says yes, use web_search to find the adopted Local Plan and identify the key policy document(s). Fetch and note the policy numbers and document name for reference throughout. Additionally, use the Benefit Threads to search for policies that positively support the scheme's merits -- these should be noted alongside the defensive/compliance policies and referenced throughout the statement.
+**Policy research trigger:** If user says yes, use web_search to find the adopted Local Plan and identify the key policy document(s). Fetch and note the policy numbers and document name for reference throughout.
 
-**Confirm:** "I've got the basic setup. Ready to move to Stage 1 -- Introduction?"
+**Append to outline.md:** Project header, LPA, Parish/Town Council, application type, known designations, Local Plan document details.
+
+**Confirm:** "I've got the basic setup and created the outline file. Ready to move to Stage 1 -- Introduction?"
 
 ---
 
@@ -196,14 +247,15 @@ START
 
 - Agent details (if applicable -- this will typically be Jake White Architecture)
 - Application type (confirm from Stage 0)
-- Full site address
 - Brief development description (refine from Stage 0)
 - Purpose of the statement -- e.g. "to demonstrate compliance with national and local planning policy"
-- **Never request applicant details.**
+- **Never request applicant details or site address.**
 
 **What this section will contain in the final document:**
 
-A short introductory paragraph identifying the site, the applicant, the nature of the application, and the purpose of the statement. Typically 2-3 paragraphs.
+A short introductory paragraph identifying the nature of the application and the purpose of the statement. Typically 2-3 paragraphs.
+
+**Append to outline.md:** Agent, refined description, statement purpose.
 
 **Confirm:** "Have we fully explored the introduction, or is there anything else to add before we move on to Site Description & Context?"
 
@@ -212,6 +264,8 @@ A short introductory paragraph identifying the site, the applicant, the nature o
 ## STAGE 2: SITE DESCRIPTION & CONTEXT
 
 **Purpose:** Paint a clear picture of the site for the case officer who may not have visited.
+
+**Follow the iterative loop.**
 
 **Information to gather:**
 
@@ -235,7 +289,9 @@ A short introductory paragraph identifying the site, the applicant, the nature o
   - Neighbourhood Plan area
   - Any local designations specific to the LPA
 
-**Policy research trigger:** "Some of these designations have specific policy implications. Shall I search online for [district] policies relating to [relevant designations] before we move on?"
+**Policy research within the loop:** Search for [district] policies relating to each confirmed designation. Feed back what those policies require and how the site's characteristics interact with them.
+
+**Append to outline.md:** Facts, designations confirmed, designation-specific policies identified, any outstanding issues for later stages.
 
 **Confirm:** "Have we fully explored the site and its context? Anything to add before we move on to Planning History?"
 
@@ -258,6 +314,19 @@ A short introductory paragraph identifying the site, the applicant, the nature o
 
 - Offer to search the LPA's planning register online if the address is known
 
+**Parish Council comment research:**
+
+If a Parish/Town Council was identified in Stage 0, offer to search for their comments on similar applications in the area. Search the LPA planning register or parish council minutes for recent comments on comparable proposals (e.g. similar scale extensions, new dwellings, similar use class changes).
+
+For each relevant comment found, note:
+- Application reference and description
+- Parish Council's position (support/object/no comment)
+- Key concerns raised
+
+**Important:** Parish Council comments are intelligence, not a checklist to respond to. Many parish councils are generally anti-development and their objections often go beyond material planning considerations. The statement should be **aware** of likely concerns so it can pre-emptively address any that overlap with genuine policy tests, but should NOT directly respond to or rebut parish council positions. The planning statement argues policy compliance, not community politics.
+
+**Append to outline.md:** Application history, refusal reasons (flagged for policy response), pre-app advice summary, Parish Council comment patterns (for awareness, not direct response).
+
 **Confirm:** "Have we fully explored the planning history? Anything to add before we move on to The Proposal?"
 
 ---
@@ -265,6 +334,8 @@ A short introductory paragraph identifying the site, the applicant, the nature o
 ## STAGE 4: THE PROPOSAL
 
 **Purpose:** Describe what is actually being proposed in sufficient detail for the case officer.
+
+**Follow the iterative loop.**
 
 **Information to gather:**
 
@@ -286,138 +357,19 @@ A short introductory paragraph identifying the site, the applicant, the nature o
 - Relationship to existing building -- where does it connect, how does it read architecturally
 - Area, Height and Volume calculations (existing vs proposed, % increase)
 
-**Confirm:** "Have we fully described the proposal? Anything to add before we move on to Statutory Framework?"
+**Policy research within the loop:** The proposal description will trigger specific policy checks -- e.g. volume increase triggers Green Belt policy if applicable, floorspace triggers CIL/affordable housing thresholds, parking numbers trigger transport policy. Research and feed back.
+
+**Append to outline.md:** Full proposal description, dimensions, materials, calculations, policies triggered by the proposal specifics.
+
+**Confirm:** "Have we fully described the proposal? Anything to add before we move on to Design & Visual Impact?"
 
 ---
 
-## STAGE 5: STATUTORY FRAMEWORK
-
-**Purpose:** Establish the legal basis for how planning decisions are made. This sets the rules of the game before the detailed policy assessment begins.
-
-**Proportionality:** For householder applications, this can be a single short paragraph. For full or outline applications, it warrants a dedicated section.
-
-**Information to cover (not gathered from user -- this is standard legal context):**
-
-- **Section 38(6) of the Planning and Compulsory Purchase Act 2004** -- applications must be determined in accordance with the development plan unless material considerations indicate otherwise.
-- **Section 70(2) of the Town and Country Planning Act 1990** -- the LPA shall have regard to the provisions of the development plan, so far as material, and to any other material considerations.
-- **NPPF presumption in favour of sustainable development** (paragraph 11) -- the "tilted balance" and when it is engaged (e.g. absence of five-year housing land supply, out-of-date policies).
-- **Identify the statutory development plan** for the area -- list the documents that constitute it (e.g. "The statutory development plan for this site comprises the [District] Local Plan [year], the [Neighbourhood Plan if applicable], and the [Minerals/Waste Plan if relevant]").
-
-**Writing guidance:** This section should read as confident, factual legal context -- not defensive or over-explained. It frames the decision-making test so the reader understands what the statement is being assessed against.
-
-**Confirm:** "Have we established the statutory framework? Anything to add before we move on to Principle of Development?"
-
----
-
-## STAGE 6: PRINCIPLE OF DEVELOPMENT
-
-**Purpose:** Establish whether the proposed development is acceptable in principle before diving into the detailed topic-by-topic assessment. This is the threshold question a case officer must answer first.
-
-**Proportionality:** For householder applications within established residential areas, this may be a brief paragraph confirming the principle is not in dispute. For full or outline applications, especially on edge-of-settlement, Green Belt, or unallocated sites, this is a critical section that can make or break the case.
-
-**Information to gather / discuss:**
-
-- Is the site within the defined settlement boundary / development limit?
-- Is the site allocated for development in the Local Plan?
-- Is it previously developed land (PDL/brownfield)?
-- What is the current use and the proposed use -- is the change of use acceptable in principle under the spatial strategy?
-- If outside a settlement boundary: what policy support exists for development in this location? (e.g. NPPF paragraph 83 for rural economy, infill, rural exception sites)
-- If Green Belt: which NPPF exceptions apply? (paragraphs 154-156 for new buildings, 157 for extensions/alterations, 158-159 for replacement buildings, etc.)
-- **Five-year housing land supply** -- can the LPA demonstrate a five-year supply? If not, the tilted balance under NPPF paragraph 11(d) is engaged. Search for the LPA's latest housing land supply position.
-- **Housing Delivery Test** -- has the LPA met the HDT threshold? If delivery is below 75%, the tilted balance is engaged.
-- Any relevant precedent from planning history (Stage 3) that supports the principle.
-- Any fallback position (e.g. permitted development rights that could deliver a comparable or worse outcome without planning permission).
-
-**Policy research trigger:** "Shall I search for [district]'s latest five-year housing land supply position and any spatial strategy policies relevant to the principle of development at this location?"
-
-**Confirm:** "Have we established the principle of development? Anything to add before we move on to Need & Justification?"
-
----
-
-## STAGE 7: NEED & JUSTIFICATION FOR DEVELOPMENT
-
-**Purpose:** Articulate *why* this development is needed -- not just that it complies with policy, but that it serves a genuine purpose and delivers tangible benefits. This section draws directly on the Benefit Threads identified in Stage 0 and translates them into planning arguments.
-
-**Proportionality:** For householder applications, this may be a brief paragraph on personal/family need and improved living conditions. For full or outline applications, this should be a substantive section covering housing need, economic benefits, and community value.
-
-**Information to gather / discuss:**
-
-- **Housing need** (if residential) -- local housing need figures, affordability, tenure mix, housing type/size needed in the area
-- **Personal/family need** (for householder apps) -- growing family, accessibility requirements, working from home, caring for elderly relatives
-- **Economic benefits** -- construction jobs, local spending, New Homes Bonus, Council Tax revenue, business rates (if commercial)
-- **Community benefits** -- public open space, affordable housing contribution, infrastructure improvements, community facilities
-- **Addressing existing problems** -- resolving a poor layout, replacing a substandard building, improving energy performance of existing housing stock, removing an eyesore
-- **Sustainability benefits** -- reducing carbon emissions, improving building performance, supporting sustainable transport patterns, BNG delivery
-- **Any site-specific justification** -- e.g. enabling development to fund heritage restoration, agricultural diversification, rural enterprise
-
-**Link to Benefit Threads:** Review the Benefit Threads from Stage 0 and ensure each one has been translated into a planning argument with policy support. If any threads haven't yet been connected to specific policies, flag them for the Policy Framework stage.
-
-**Policy research trigger:** "Shall I search for [district]'s policies on [housing need / economic development / sustainability] to support the justification for this scheme?"
-
-**Confirm:** "Have we fully articulated the need and justification? Anything to add before we move on to the Policy Framework?"
-
----
-
-## STAGE 8: PLANNING POLICY FRAMEWORK
-
-**Purpose:** Identify and analyse every relevant planning policy. This is the core of the statement.
-
-**This stage has THREE sub-stages:**
-
-### 5A: National Policy (NPPF)
-
-Identify relevant NPPF chapters and paragraphs. Common ones include:
-
-- Chapter 2: Achieving sustainable development
-- Chapter 4: Decision making
-- Chapter 9: Promoting sustainable transport
-- Chapter 12: Achieving well-designed and beautiful places
-- Chapter 13: Protecting Green Belt land (if applicable)
-- Chapter 14: Meeting the challenge of climate change and flooding
-- Chapter 15: Conserving and enhancing the natural environment
-- Chapter 16: Conserving and enhancing the historic environment (if applicable)
-
-For each relevant chapter, identify the specific paragraph and policy test, then explain how the proposal addresses it. **Search for the current NPPF to confirm paragraph numbers** -- these can shift between NPPF versions.
-
-**Policy research trigger:** "Shall I search for the current NPPF paragraph numbers relevant to [topic]? Paragraph numbers change between NPPF versions."
-
-### 5B: Local Plan Policies
-
-**Policy research trigger:** "Shall I now search online for [district] Local Plan policies relevant to this application? I'll look for policies covering [list topics based on what we've gathered]."
-
-For each identified Local Plan policy:
-- State the policy number and name
-- Quote or closely paraphrase the relevant test
-- Explain in 2-3 sentences minimum how the proposal complies
-
-**Common policy categories to search for:**
-- Spatial strategy / settlement hierarchy
-- Design quality / character
-- Residential amenity
-- Green Belt (if applicable)
-- Heritage (if applicable)
-- Transport and parking
-- Flood risk and drainage
-- Biodiversity / ecology
-- Trees and landscaping
-- Sustainability / energy
-- Housing mix / density (if new dwellings)
-- Affordable housing (if triggered)
-- Infrastructure / CIL / S106
-
-### 5C: Neighbourhood Plan / SPDs
-
-- Check if a Neighbourhood Plan applies to the site
-- Check for relevant Supplementary Planning Documents
-- Identify any relevant policies and explain compliance
-
-**Confirm:** "Have we fully covered the policy framework? Any policies I've missed, or any you'd like me to research further before we move on?"
-
----
-
-## STAGE 9: DESIGN & VISUAL IMPACT
+## STAGE 5: DESIGN & VISUAL IMPACT
 
 **Purpose:** Demonstrate that the proposal is well-designed and respects local character.
+
+**Follow the iterative loop.**
 
 **Information to gather / discuss:**
 
@@ -429,17 +381,21 @@ For each identified Local Plan policy:
 - If in Green Belt: impact on openness (visual AND spatial)
 - If in AONB/AGLV: landscape impact, views from public vantage points
 - Reference to NPPF Chapter 12 and relevant local design policy
-- Any Design Review Panel feedback (refer to Stage 11)
+- Any Design Review Panel feedback (refer to Stage 11 later)
 
-**Policy research trigger:** "Shall I search for [district]'s design policies or any relevant design SPD/guidance before we move on?"
+**Policy research within the loop:** Search for [district] design policies and any design SPD/guidance. Feed back what the policy tests require, check the user's design rationale against them.
+
+**Append to outline.md:** Design approach, policy compliance narrative for design, any DRP feedback noted.
 
 **Confirm:** "Have we fully explored the design and visual impact? Anything to add before we move on to Amenity?"
 
 ---
 
-## STAGE 10: RESIDENTIAL AMENITY
+## STAGE 6: RESIDENTIAL AMENITY
 
 **Purpose:** Demonstrate the proposal does not unacceptably harm neighbours' living conditions.
+
+**Follow the iterative loop.**
 
 **Information to gather / discuss:**
 
@@ -450,15 +406,37 @@ For each identified Local Plan policy:
 - **Outlook** -- impact on neighbours' outlook from principal rooms
 - **Construction impact** -- hours, access, duration (brief mention)
 
-**Policy research trigger:** "Shall I search for [district]'s amenity policies and any specific guidance on separation distances or daylight standards?"
+**Policy research within the loop:** Search for [district] amenity policies and any specific guidance on separation distances or daylight standards. Feed back what the tests require, check the user's dimensions and arrangements against them.
 
-**Confirm:** "Have we fully explored the amenity impacts? Anything to add before we move on to Access & Highways?"
+**Append to outline.md:** Amenity facts, policies identified, compliance narrative for amenity.
+
+**Confirm:** "Have we fully explored the amenity impacts? Anything to add before we move on?"
 
 ---
 
-## STAGE 11: ACCESS, HIGHWAYS & PARKING
+## >>> COMPACT TRIGGER <<<
+
+**This is not a fixed stage -- it triggers dynamically.**
+
+After each stage is confirmed and appended to the outline, count the total bullet points in `/home/claude/outline.md`. If the count exceeds 50, trigger compact at the next stage boundary.
+
+**Say to the user:**
+
+> "The outline has passed 50 bullet points -- the conversation is getting heavy. I'm going to trigger /compact now to free up context space. Nothing will be lost -- the outline file has everything we've confirmed."
+
+**After compact, immediately:**
+
+1. Read `/home/claude/outline.md` in full using the `view` tool
+2. Confirm to the user: "I've re-read the outline. We're resuming at Stage [N] -- [stage name]. Ready?"
+
+
+---
+
+## STAGE 7: ACCESS, HIGHWAYS & PARKING
 
 **Purpose:** Demonstrate safe and adequate access, parking, and transport arrangements.
+
+**Follow the iterative loop.**
 
 **Information to gather / discuss:**
 
@@ -473,64 +451,72 @@ For each identified Local Plan policy:
 - Accessibility -- Part M compliance, level access
 - Proximity to public transport, shops, services (sustainability argument)
 
-**Policy research trigger:** "Shall I search for [district] or [county] parking standards and transport policies?"
+**Policy research within the loop:** Search for [district] or [county] parking standards and transport policies. Feed back what the standards require, check the user's parking/access arrangements against them.
+
+**Append to outline.md:** Access and parking facts, policies identified, compliance narrative.
 
 **Confirm:** "Have we fully explored access and highways? Anything to add before we move on to Environmental Considerations?"
 
 ---
 
-## STAGE 12: ENVIRONMENTAL CONSIDERATIONS
+## STAGE 8: ENVIRONMENTAL CONSIDERATIONS
 
 **Purpose:** Address all environmental matters relevant to the site and proposal.
 
+**Follow the iterative loop for each applicable sub-topic.**
+
 **Sub-topics (discuss each, skip any that are clearly not applicable):**
 
-### 9A: Flood Risk & Drainage
+### 8A: Flood Risk & Drainage
 - Flood zone (from Stage 2 designations)
 - Sequential test / exception test (if Zone 2/3)
 - Surface water drainage strategy (SuDS)
 - Foul drainage
 - Any FRA submitted or required
 
-### 9B: Ecology & Biodiversity
+### 8B: Ecology & Biodiversity
 - Protected species surveys
 - Biodiversity Net Gain (BNG) -- search for current mandatory requirements and thresholds
 - Ecological enhancement measures
 - Impact on designated sites (SSSI, SPA, SAC)
 
-### 9C: Trees & Landscaping
+### 8C: Trees & Landscaping
 - Trees on or adjacent to site
 - TPOs
 - Arboricultural impact assessment
 - Proposed landscaping / planting
 
-### 9D: Sustainability & Energy
+### 8D: Sustainability & Energy
 - Part L compliance approach
 - Renewable energy provision
 - Fabric-first approach
 - Any local sustainability policy requirements
 
-### 9E: Contamination
+### 8E: Contamination
 - Previous uses suggesting contamination
 - Any Phase 1 desk study
 
-### 9F: Other
+### 8F: Other
 - Air quality
 - Noise (from external sources onto the development)
 - Lighting
 - Waste minimisation
 
-**Policy research trigger:** "Shall I search for [district]'s environmental policies -- flood risk, ecology, sustainability, trees?"
+**Policy research within the loop:** Search for [district] environmental policies -- flood risk, ecology, sustainability, trees. Each sub-topic may trigger its own policy research and feedback cycle.
+
+**Append to outline.md:** Environmental facts per sub-topic, policies identified, compliance narratives.
 
 **Confirm:** "Have we fully explored the environmental considerations? Anything to add before we move on?"
 
 ---
 
-## STAGE 13: HERITAGE (if applicable)
+## STAGE 9: HERITAGE (if applicable)
 
 **Skip this stage if no heritage designations were identified in Stage 2.**
 
 **Purpose:** Demonstrate that the proposal preserves or enhances heritage significance.
+
+**Follow the iterative loop.**
 
 **Information to gather / discuss:**
 
@@ -543,13 +529,60 @@ For each identified Local Plan policy:
 - If substantial harm: exceptional circumstances / substantial public benefits (NPPF paragraph 207)
 - Reference to any Heritage Statement submitted with the application
 
-**Policy research trigger:** "Shall I search for [district]'s heritage policies and any relevant conservation area appraisal?"
+**Policy research within the loop:** Search for [district] heritage policies and any relevant conservation area appraisal. If the appraisal reveals significance factors that affect earlier stages (e.g. roofscape, materials, boundary treatments), add backward references to the outline file under those earlier stage headings.
+
+**Append to outline.md:** Heritage facts, significance analysis, harm assessment, policies identified, compliance narrative. Plus any backward references to earlier stages.
 
 **Confirm:** "Have we fully explored the heritage considerations? Anything to add?"
 
 ---
 
-## STAGE 14: CONSULTATION & ENGAGEMENT
+## STAGE 10: POLICY FRAMEWORK REVIEW
+
+**Purpose:** Bird's-eye review of the entire outline against all policies. This is NOT a data-gathering stage -- it is a review and gap-check stage.
+
+**Action:**
+
+1. Read `/home/claude/outline.md` in full using the `view` tool.
+2. Review every stage's policy compliance narrative against the full policy framework.
+3. Check for:
+
+**Strategic-level policies not yet captured:**
+- NPPF Chapter 2: Achieving sustainable development (presumption in favour)
+- NPPF Chapter 4: Decision making
+- Spatial strategy / settlement hierarchy policies
+- Any overarching Local Plan policies that frame the entire development plan
+- Neighbourhood Plan policies (if applicable)
+- Relevant SPDs
+
+**Cross-references and consistency:**
+- Does the design narrative align with what was said about site context?
+- Do the amenity dimensions match the proposal dimensions?
+- Are all designation-specific policies identified in Stage 2 addressed in later stages?
+- Do refusal reasons from Stage 3 have explicit policy responses in later stages?
+- Are there any policy tests identified in one stage that should also be referenced in another?
+
+**Gaps:**
+- Any policy categories not covered? Common misses: CIL/S106, housing mix, affordable housing thresholds, accessibility, waste
+- Any NPPF chapters relevant to this scheme not yet cited?
+- Any Local Plan policies identified during research that haven't been addressed?
+
+**NPPF paragraph verification:**
+- Search for the current NPPF to confirm paragraph numbers cited throughout the outline. Paragraph numbers shift between NPPF versions -- verify before document generation.
+
+**After the review:**
+
+- Present findings to the user: "I've reviewed the full outline against all policies. Here's what I found: [gaps/issues/additions needed]."
+- Discuss and resolve each finding through the iterative loop.
+- Update the outline file with any additions, corrections, or cross-references.
+
+**Append to outline.md:** Strategic policies section (NPPF sustainable development, decision-making framework, spatial strategy), any gap-fill policies, cross-reference notes, NPPF paragraph numbers confirmed.
+
+**Confirm:** "The policy framework review is complete. Ready to move on to Consultation & Engagement?"
+
+---
+
+## STAGE 11: CONSULTATION & ENGAGEMENT
 
 **Purpose:** Demonstrate that the applicant has engaged constructively with stakeholders.
 
@@ -562,6 +595,10 @@ For each identified Local Plan policy:
 - Any public consultation events
 - Statutory consultee engagement (highways, environment agency, etc.)
 
+**Note:** Pre-app advice often directly references policies. Cross-check any policy references in the advice against the policies identified in the outline. If the officer cited a policy we haven't addressed, flag it and add it.
+
+**Append to outline.md:** Consultation facts, any additional policies flagged from pre-app advice.
+
 **Confirm:** "Have we fully explored consultation and engagement? Anything to add?"
 
 ---
@@ -570,7 +607,7 @@ For each identified Local Plan policy:
 
 After completing all applicable stages, ask:
 
-> "We've now covered all the standard planning statement topics. Before I draft the document, are there any **unique aspects of this scheme** that aren't covered by the stages above? For example:
+> "We've now covered all the standard planning statement topics. The outline file is complete. Before I draft the document, are there any **unique aspects of this scheme** that aren't covered by the stages above? For example:
 > - Specific material considerations the officer should weigh
 > - Fallback positions (e.g. permitted development comparison)
 > - Viability arguments
@@ -580,7 +617,7 @@ After completing all applicable stages, ask:
 >
 > Or shall I proceed to formulate the document?"
 
-If additional topics are identified, discuss each one iteratively with the same confirm-before-moving-on approach.
+If additional topics are identified, discuss each one iteratively with the same loop, append to outline.md, and confirm before proceeding.
 
 ---
 
@@ -589,42 +626,44 @@ If additional topics are identified, discuss each one iteratively with the same 
 **When the user confirms ready to draft:**
 
 1. Read the docx skill at `/mnt/skills/public/docx/SKILL.md`
-2. Compile all gathered information into a professional planning statement
-3. Structure with the following sections:
+2. Read `/home/claude/outline.md` in full -- this is the source material
+3. Compile into a professional planning statement using the outline as the content skeleton
+4. Structure with the following sections:
 
 ```
 1.0  Introduction
 2.0  Site Description and Context
 3.0  Planning History
 4.0  The Proposal
-5.0  Statutory Framework
-6.0  Principle of Development
-7.0  Need and Justification for Development
-8.0  Planning Policy Framework
-     8.1  National Planning Policy Framework
-     8.2  [District] Local Plan
-     8.3  Neighbourhood Plan / SPDs (if applicable)
-9.0  Design and Visual Impact
-10.0 Residential Amenity
-11.0 Access, Highways and Parking
-12.0 Environmental Considerations
-13.0 Heritage Considerations (if applicable)
-14.0 Consultation and Engagement
-15.0 Conclusion
+5.0  Design and Visual Impact
+6.0  Residential Amenity
+7.0  Access, Highways and Parking
+8.0  Environmental Considerations
+9.0  Heritage Considerations (if applicable)
+10.0 Planning Policy Framework
+     10.1 National Planning Policy Framework
+     10.2 [District] Local Plan
+     10.3 Neighbourhood Plan / SPDs (if applicable)
+11.0 Consultation and Engagement
+12.0 Conclusion
 ```
 
-4. The Conclusion should:
+**Note on Section 10 placement in the document:** Although the Policy Framework Review was the last analytical stage (Stage 10 in the workflow), in the final document it can sit either:
+- **As Section 10** (as shown above) -- after the topic-specific sections, pulling together the strategic policy argument before the conclusion. This works well because each earlier section has already cited its relevant policies inline, and Section 10 provides the overarching framework.
+- **As Section 5** (traditional position) -- if the user prefers a conventional structure where policy is laid out before the topic analysis. Ask the user which they prefer before generating.
+
+5. The Conclusion should:
    - Summarise key policy compliance points
    - State the planning balance clearly
    - End with a recommendation: "For the reasons set out in this statement, the proposal is considered to accord with the development plan and national policy. Planning permission should be granted."
 
-5. Format as a professional .docx with:
+6. Format as a professional .docx with:
    - Numbered sections and subsections
    - Page numbers
    - Table of contents (for longer statements)
    - Professional fonts and spacing
 
-6. Output to `/mnt/user-data/outputs/` and present to user
+7. Output to `/mnt/user-data/outputs/` and present to user
 
 ---
 
@@ -637,24 +676,25 @@ If additional topics are identified, discuss each one iteratively with the same 
 - **No bullet points in the body** -- write in flowing paragraphs. Lists only for policy references or where genuinely clearer
 - **Active voice** -- "the proposal provides..." not "it is considered that provision is made for..."
 - **Avoid hedging** -- "the proposal complies with Policy [X]" not "it is considered that the proposal is broadly in accordance with the aims of Policy [X]"
+- **Policy citations inline** -- each topic section should cite its relevant policies within the narrative, not just in Section 10. Section 10 provides the strategic framework; topic sections provide the detailed compliance arguments.
 
 ---
 
 ## QUICK REFERENCE: POLICY RESEARCH TRIGGERS
 
-At the following stages, offer to search online for relevant policies:
+Policy research is now embedded in the iterative loop at every stage, not concentrated in one place. However, these are the typical policy topics searched at each stage:
 
 | Stage | Research Topic |
 |-------|---------------|
 | 0 | Adopted Local Plan -- identify document name and key policies |
 | 2 | Designation-specific policies (Green Belt, AONB, CA, Flood Zone) |
-| 6 | Five-year housing land supply, spatial strategy, principle of development |
-| 7 | Housing need, economic development, sustainability policies to support justification |
-| 8 | Full Local Plan policy audit -- design, amenity, transport, environment, heritage |
-| 9 | Design policies, design SPD/guidance, character assessments |
-| 10 | Amenity policies, separation distance guidance |
-| 11 | Parking standards (LPA or county), transport policies |
-| 12 | Environmental policies -- flood, ecology, trees, sustainability |
-| 13 | Heritage policies, conservation area appraisals |
+| 4 | Proposal-triggered policies (volume thresholds, CIL, use class) |
+| 5 | Design policies, design SPD/guidance, character assessments |
+| 6 | Amenity policies, separation distance guidance, daylight standards |
+| 7 | Parking standards (LPA or county), transport policies |
+| 8 | Environmental policies -- flood, ecology, trees, sustainability |
+| 9 | Heritage policies, conservation area appraisals |
+| 10 | Strategic policies, NPPF verification, gap-check across all topics |
+| 11 | Cross-check any policies cited in pre-app advice |
 
 Always ask before searching. The user may already have the policy information or may prefer to provide it themselves.
